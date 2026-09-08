@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEComm Travel Recommendation</title>
+    <link rel="stylesheet" href="travel_recommendation.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <h2>TEComm Travel Recommendation</h2>
+
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact Us</a>
+
+        <input 
+            type="text" 
+            id="searchInput" 
+            placeholder="Enter a destination or keyword"
+        >
+
+        <button id="searchButton">Search</button>
+        <button id="resetButton">Reset</button>
+    </nav>
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+
+        <div class="home-content">
+            <h1>Explore the World with TEComm</h1>
+
+            <p>
+                Discover amazing destinations, beautiful beaches, historic
+                temples, and exciting countries around the world.
+                Let TEComm help you find your next unforgettable adventure.
+            </p>
+
+            <button>Explore Destinations</button>
+        </div>
+
+    </section>
+    <!-- About Us Section -->
+    <section id="about">
+    
+        <h1>About Us</h1>
+    
+        <p>
+            TEComm Travel Recommendation is a travel platform designed to help
+            travelers discover exciting destinations around the world.
+            We provide recommendations for beautiful beaches, historic temples,
+            and interesting countries to help you plan your next journey.
+        </p>
+    
+        <h2>Our Team</h2>
+    
+        <div class="team">
+        
+            <div class="team-member">
+                <h3>Trinity Chigubhu</h3>
+                <p>Founder & Lead Developer</p>
+            </div>
+        
+            <div class="team-member">
+                <h3>Tanatswa Gendere</h3>
+                <p>Travel Researcher</p>
+            </div>
+        
+            <div class="team-member">
+                <h3>Darlington Chinokwetu</h3>
+                <p>Travel Content Specialist</p>
+            </div>
+        
+        </div>
+    
+    </section>
+    <!-- Contact Us Section -->
+    <section id="contact">
+
+        <h1>Contact Us</h1>
+
+        <p>
+            Have questions or need help planning your trip?
+            Get in touch with the TEComm Travel Recommendation team.
+        </p>
+
+        <form>
+
+            <label for="name">Name:</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                required
+            >
+
+            <label for="email">Email:</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+            >
+
+            <label for="message">Message:</label>
+            <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="Enter your message"
+                required
+            ></textarea>
+
+            <button type="submit">Submit</button>
+
+        </form>
+
+    </section>
+
+    <section id="results"></section>
+
+    <script src="travel_recommendation.js"></script>
+
+</body>
+
+</html>
